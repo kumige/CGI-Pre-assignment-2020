@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CGI Pre-assignment</string>
+    <string name="new_observation">New observation</string>
+    <string name="name">Name of the species</string>
+    <string name="notes">Notes</string>
+    <string name="common">Common</string>
+    <string name="rare">Rare</string>
+    <string name="ext_rare">Extremely Rare</string>
+    <string name="take_photo">Choose a photo</string>
+    <string name="save_observation">Save Observation</string>
+    <string name="sort_by">Sort by</string>
+    <string name="rarity">Sort by rarity</string>
+    <string name="date">Sort by most recent</string>
+    <string name="my_observations">My Observations</string>
+    <string name="add_observation">Add a new observation</string>
+
+</resources>

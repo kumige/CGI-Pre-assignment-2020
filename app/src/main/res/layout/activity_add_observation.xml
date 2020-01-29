@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText_notes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint="@string/notes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_name" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_rarity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_notes">
+
+            <RadioButton
+                android:id="@+id/radioButton_common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/common" />
+
+            <RadioButton
+                android:id="@+id/radioButton_rare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rare" />
+
+            <RadioButton
+                android:id="@+id/radioButton_extremelyRare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ext_rare" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_takePhoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/take_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup_rarity" />
+
+        <Button
+            android:id="@+id/button_saveObservation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/save_observation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_takePhoto" />
+
+        <ImageView
+            android:id="@+id/imageView_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_saveObservation"
+            tools:srcCompat="@tools:sample/avatars[2]" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
