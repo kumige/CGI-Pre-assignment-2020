@@ -5,6 +5,8 @@ Assignment #4
 
 Developed by Mikko Romo
 
+## <a href="https://www.dropbox.com/s/owchrug1frnb7va/cgipre_mikko_romo.apk?dl=0">.apk download</a>
+
 ### Build instructions
 
 ##### Requirements
