@@ -20,6 +20,12 @@ Developed by Mikko Romo
 3. Connect your Android device (with enabled developer settings) with the USB cable
 4. Run
 
+#### My solution
+Observations are saved locally in a Room database. The dynamic list is a RecyclerView with LiveData coming from the database. The user is able to add photos to observations from the phones external storage. 
+
+#### My experience
+I have had experience with Android apps from multiple school projects, so I didn't have much problems working on it. I have previously used the Anko libraries to interact with a Room database, but while working on this task, I noticed the library was deprecated December 2019. I learned to use Kotlin coroutines instead.
+
 ### Screenshots
 <p align="center">
 <img src="https://github.com/kumige/CGI-Pre-assignment-2020/blob/master/images/Screenshot_20200129-165821.jpg">
